@@ -106,17 +106,17 @@ Optimized for desktop research workflow during market hours, with mobile-respons
 
 ### Repository Structure: Monorepo
 
-Single repository containing separate packages for frontend, backend, and shared types/utilities. This approach supports the 3-month MVP timeline with easier dependency management and unified development workflow while maintaining clear service boundaries for future scaling.
+Single repository containing separate packages for frontend (React/TypeScript), backend (Ruby on Rails), and shared types/utilities. This approach supports the 3-month MVP timeline with easier dependency management and unified development workflow while maintaining clear service boundaries for future scaling.
 
 ### Service Architecture
 
-**API-First Monolith within Monorepo**: Initial monolithic backend service with clear separation between data pipeline, portfolio engine, and AI analysis services. This balances rapid MVP development with future microservices migration path. Core services include:
+**Rails API-First Monolith within Monorepo**: Ruby on Rails backend with clear separation between data pipeline, portfolio engine, and AI analysis services. This balances rapid MVP development with future microservices migration path. Core services include:
 
-- **Data Pipeline Service**: 13F data ingestion and processing via financialdatasets.ai
-- **Portfolio Engine**: Percentage-based allocation calculations and validation  
+- **Data Pipeline Service**: 13F data ingestion and processing via financialdatasets.ai API
+- **Portfolio Engine**: Percentage-based allocation calculations and validation using Rails models
 - **Trading Integration**: Alpaca API wrapper with OAuth and order management
-- **AI Analysis Service**: OpenAI/Claude API integration with prompt optimization
-- **User Management**: Authentication and portfolio history tracking
+- **AI Analysis Service**: OpenRouter integration for multi-model AI analysis with prompt optimization
+- **User Management**: Firebase Authentication integration and portfolio history tracking
 
 ### Testing Requirements
 
@@ -124,16 +124,37 @@ Single repository containing separate packages for frontend, backend, and shared
 
 ### Additional Technical Assumptions and Requests
 
-**Frontend Technology**: React.js with TypeScript for type safety across financial calculations, Material-UI or Tailwind CSS for rapid professional UI development
+**Frontend Technology**: React.js with TypeScript deployed on Vercel for optimal performance and seamless CI/CD integration
 
-**Backend Technology**: Node.js/Express.js for API consistency with frontend, serverless functions for AI analysis triggers to manage costs
+**Backend Technology**: Ruby on Rails for rapid API development with strong conventions and financial data handling capabilities
 
-**Database Strategy**: PostgreSQL for portfolio data and user management with ACID compliance for financial transactions, Redis for caching API responses and real-time portfolio calculations
+**Database Strategy**: Firebase for real-time data synchronization, user authentication, and scalable document storage optimized for portfolio data
 
-**Hosting Infrastructure**: Vercel/Netlify for frontend deployment, Railway/Render for backend hosting, leveraging free tiers during MVP validation with clear scaling path
+**Trading Integration**: Alpaca API for fractional share trading, OAuth authentication, and portfolio execution with comprehensive order management
 
-**Security Requirements**: OAuth 2.0 for user authentication, encrypted API key storage, HTTPS everywhere, SEC compliance disclaimers integrated throughout UX flow
+**AI Integration**: OpenRouter for multi-model AI analysis access, enabling cost optimization and model flexibility for market analysis features
 
-**API Integration Constraints**: Intelligent caching and batching strategies required for financialdatasets.ai and AI provider rate limits, cost-efficient market data refresh strategies targeting <$0.50/user monthly budget
+**Hosting Infrastructure**: Vercel for frontend deployment with automatic deployments, Railway for Rails backend hosting with integrated database connections
+
+**Security Requirements**: Firebase Authentication for user management, encrypted API key storage, HTTPS everywhere, SEC compliance disclaimers integrated throughout UX flow
+
+**API Integration Constraints**: Intelligent caching strategies for financialdatasets.ai, Alpaca, and OpenRouter rate limits, targeting <$0.50/user monthly budget across all services
 
 **Development Workflow**: GitHub Actions for CI/CD, automated testing pipeline, environment-specific deployments with production safeguards for financial data
+
+## Epic List
+
+**Epic 1: Foundation & Core Infrastructure**  
+Establish project setup, authentication, basic user management, and core data pipeline to deliver the first functional increment with 13F portfolio browsing capability.
+
+**Epic 2: Portfolio Copying Engine**  
+Create the percentage-based portfolio editor and allocation engine, enabling users to view, modify, and validate institutional portfolio allocations with real-time calculations.
+
+**Epic 3: Trading Integration & Execution**  
+Implement Alpaca integration for one-click portfolio execution with OAuth authentication, fractional share handling, and order management workflow.
+
+**Epic 4: AI Market Analysis**  
+Add real-time AI-powered analysis comparing institutional positions against current market conditions, providing the key differentiating feature of contextual investment intelligence.
+
+**Epic 5: Performance Tracking & Analytics**  
+Build comprehensive portfolio performance comparison system showing user's customized strategy against original institutional portfolios with key metrics and historical tracking.

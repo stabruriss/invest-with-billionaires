@@ -1,0 +1,312 @@
+/**
+ * Design Tokens - Invest with Billionaires
+ * Sophisticated Gameboy aesthetic with wabi-sabi authenticity
+ *
+ * Usage: Import this file globally or use as CSS variables
+ * Compatible with vanilla CSS, Tailwind CSS (extend theme), or CSS-in-JS
+ */
+
+:root {
+  /* ========================================
+     COLOR PALETTE
+     ======================================== */
+
+  /* Primary (Sage Green - Gameboy LCD) */
+  --color-primary: #9BBC0F;
+  --color-primary-rgb: 155, 188, 15;
+  --color-primary-light: #B3D12F;
+  --color-primary-dark: #7A9608;
+
+  /* Accent (Warm Amber) */
+  --color-accent: #FFB30F;
+  --color-accent-rgb: 255, 179, 15;
+  --color-accent-light: #FFBF3F;
+  --color-accent-dark: #E69F00;
+
+  /* Background (Cream/Paper) */
+  --color-bg-primary: #F7F3E9;
+  --color-bg-secondary: #F0ECE3;
+  --color-bg-tertiary: #E8E4DA;
+
+  /* Text Colors */
+  --color-text-primary: #2A2823;
+  --color-text-secondary: #6B6860;
+  --color-text-tertiary: #8B8680;
+  --color-text-inverse: #F7F3E9;
+
+  /* Neutral Grays */
+  --color-gray-50: #F9F7F3;
+  --color-gray-100: #EFEBE1;
+  --color-gray-200: #E3DFCE;
+  --color-gray-300: #C9C4B3;
+  --color-gray-400: #8B8680;
+  --color-gray-500: #6B6860;
+  --color-gray-600: #4A4843;
+  --color-gray-700: #3A3833;
+  --color-gray-800: #2A2823;
+  --color-gray-900: #1A1813;
+
+  /* Semantic Colors */
+  --color-success: #9BBC0F;      /* Same as primary - gains */
+  --color-warning: #FFB30F;      /* Same as accent - cautions */
+  --color-danger: #C13B3B;       /* Muted red - losses, errors */
+  --color-info: #7A8C8E;         /* Soft teal-gray - informational */
+
+  /* Borders */
+  --color-border-primary: #8B8680;
+  --color-border-secondary: #C9C4B3;
+  --color-border-focus: #FFB30F;
+
+  /* ========================================
+     TYPOGRAPHY
+     ======================================== */
+
+  /* Font Families */
+  --font-primary: 'Berkeley Mono', 'IBM Plex Mono', 'Courier New', monospace;
+  --font-numbers: 'IBM Plex Mono', 'Courier New', monospace;
+  --font-fallback: 'Courier New', monospace;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 2rem;      /* 32px */
+  --font-size-4xl: 3rem;      /* 48px */
+  --font-size-5xl: 4.5rem;    /* 72px */
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.4;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.01em;
+  --letter-spacing-wider: 0.02em;
+
+  /* ========================================
+     SPACING (8px base unit grid)
+     ======================================== */
+
+  --spacing-xs: 0.25rem;   /* 4px - 0.5 units */
+  --spacing-sm: 0.5rem;    /* 8px - 1 unit */
+  --spacing-md: 1rem;      /* 16px - 2 units */
+  --spacing-lg: 1.5rem;    /* 24px - 3 units */
+  --spacing-xl: 2rem;      /* 32px - 4 units */
+  --spacing-2xl: 3rem;     /* 48px - 6 units */
+  --spacing-3xl: 4rem;     /* 64px - 8 units */
+  --spacing-4xl: 6rem;     /* 96px - 12 units */
+
+  /* Component-Specific Spacing */
+  --spacing-card-padding: var(--spacing-lg);
+  --spacing-section-gap: var(--spacing-2xl);
+  --spacing-page-margin: var(--spacing-md);
+
+  /* ========================================
+     LAYOUT
+     ======================================== */
+
+  /* Container Widths */
+  --container-max: 1400px;
+  --content-max: 800px;
+  --card-max: 440px;
+
+  /* Grid Gutters */
+  --grid-gutter-mobile: var(--spacing-md);
+  --grid-gutter-desktop: var(--spacing-lg);
+
+  /* ========================================
+     BORDER RADIUS
+     ======================================== */
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* ========================================
+     SHADOWS
+     ======================================== */
+
+  /* Subtle pixel-dithered shadows */
+  --shadow-sm: 0 1px 2px rgba(42, 40, 35, 0.05);
+  --shadow-md: 0 2px 4px rgba(42, 40, 35, 0.08), 0 4px 8px rgba(42, 40, 35, 0.04);
+  --shadow-lg: 0 4px 8px rgba(42, 40, 35, 0.1), 0 8px 16px rgba(42, 40, 35, 0.06);
+  --shadow-xl: 0 8px 16px rgba(42, 40, 35, 0.12), 0 16px 32px rgba(42, 40, 35, 0.08);
+
+  /* LED Glow Effect (for numbers) */
+  --glow-primary: 0 0 8px rgba(155, 188, 15, 0.3), 0 0 16px rgba(155, 188, 15, 0.1);
+  --glow-accent: 0 0 8px rgba(255, 179, 15, 0.3), 0 0 16px rgba(255, 179, 15, 0.1);
+
+  /* ========================================
+     TRANSITIONS & ANIMATIONS
+     ======================================== */
+
+  /* Durations */
+  --duration-fast: 100ms;
+  --duration-normal: 150ms;
+  --duration-slow: 200ms;
+  --duration-slower: 300ms;
+  --duration-pulse: 500ms;
+
+  /* Easing Functions */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-linear: linear;
+
+  /* ========================================
+     Z-INDEX
+     ======================================== */
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+  --z-tooltip: 700;
+
+  /* ========================================
+     BREAKPOINTS (for use in media queries)
+     ======================================== */
+
+  --breakpoint-mobile: 320px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-wide: 1440px;
+
+  /* ========================================
+     COMPONENT-SPECIFIC TOKENS
+     ======================================== */
+
+  /* Buttons */
+  --button-height-sm: 32px;
+  --button-height-md: 40px;
+  --button-height-lg: 48px;
+  --button-padding-x: var(--spacing-md);
+  --button-padding-y: var(--spacing-sm);
+  --button-radius: var(--radius-md);
+
+  /* Inputs */
+  --input-height: 48px;
+  --input-padding-x: var(--spacing-md);
+  --input-padding-y: var(--spacing-sm);
+  --input-radius: var(--radius-sm);
+  --input-border-width: 1px;
+
+  /* Cards */
+  --card-padding: var(--spacing-lg);
+  --card-radius: var(--radius-md);
+  --card-border-width: 1px;
+
+  /* Icons */
+  --icon-size-xs: 8px;
+  --icon-size-sm: 16px;
+  --icon-size-md: 24px;
+  --icon-size-lg: 32px;
+  --icon-size-xl: 48px;
+
+  /* Touch Targets (Accessibility) */
+  --touch-target-min: 44px;
+
+  /* Focus Indicators (Accessibility) */
+  --focus-outline-width: 2px;
+  --focus-outline-offset: 2px;
+  --focus-outline-color: var(--color-accent);
+}
+
+/* ========================================
+   DARK MODE OVERRIDES (Optional Future)
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  /* Currently optimized for light mode only */
+  /* Uncomment and customize if dark mode support needed */
+
+  /*
+  :root {
+    --color-bg-primary: #1A1813;
+    --color-bg-secondary: #2A2823;
+    --color-text-primary: #F7F3E9;
+    --color-text-secondary: #C9C4B3;
+  }
+  */
+}
+
+/* ========================================
+   REDUCED MOTION (Accessibility)
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0.01ms;
+    --duration-normal: 0.01ms;
+    --duration-slow: 0.01ms;
+    --duration-slower: 0.01ms;
+    --duration-pulse: 0.01ms;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ========================================
+   UTILITY CLASSES (Optional)
+   ======================================== */
+
+/* LED Glow Effect for Numbers */
+.led-glow {
+  font-family: var(--font-numbers);
+  text-shadow: var(--glow-primary);
+  color: var(--color-primary);
+}
+
+.led-glow-accent {
+  font-family: var(--font-numbers);
+  text-shadow: var(--glow-accent);
+  color: var(--color-accent);
+}
+
+/* Pixel Art Rendering */
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Hand-Drawn Border (Wabi-Sabi) */
+.border-hand-drawn {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-border-primary);
+  /* Apply SVG filter for irregularity - implement in CSS or via inline SVG */
+}
+
+/* Paper Texture Background */
+.bg-paper {
+  background-color: var(--color-bg-primary);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.03"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)"/></svg>');
+}
+
+/* Focus Indicator (Accessibility) */
+.focus-visible:focus-visible {
+  outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  outline-offset: var(--focus-outline-offset);
+}
