@@ -3,14 +3,14 @@
 ## AI UI Generation Prompt
 
 ```markdown
-Create a minimal, confident execution preview screen with sophisticated Gameboy aesthetics and retro gaming nostalgia.
+Create a minimal, confident execution preview screen with tactile hardware design and empowering aesthetic.
 
 DESIGN SYSTEM:
-- Primary: #9BBC0F (sage green)
-- Accent: #FFB30F (warm amber)
-- Background: #F7F3E9 (cream paper texture)
+- Primary action: #FF6B35 or #FFB30F (warm orange for EXECUTE)
+- Secondary: #9BBC0F (sage green)
+- Background: #F7F3E9 (cream/off-white texture)
 - Typography: Berkeley Mono (UI), IBM Plex Mono (numbers - LED display style)
-- Conservative pixel art with wabi-sabi authenticity
+- Style: Clean modular layout with tactile 3D buttons (hardware-inspired)
 
 LAYOUT:
 - Centered, focused design (not full-width)
@@ -43,10 +43,11 @@ WARNINGS/INFO:
 - Berkeley Mono text, concise
 
 PRIMARY ACTION:
-- ONE large button: "Execute Portfolio" (sage green #9BBC0F)
-- Confident size, rounded corners with pixel texture
-- Subtle hand-drawn border irregularity
-- Hover: gentle glow, slight lift
+- ONE large button: "EXECUTE PORTFOLIO" (warm orange #FF6B35, uppercase)
+- Confident size, tactile 3D depth (raised with shadow)
+- Rounded corners (6-8px)
+- Hover: lifts 2px, shadow deepens, feels empowering and clickable
+- Small pulsing orange status dot showing "ready to execute"
 
 SECONDARY ACTION:
 - Small text link: "← Go back and edit" (muted, top-left)

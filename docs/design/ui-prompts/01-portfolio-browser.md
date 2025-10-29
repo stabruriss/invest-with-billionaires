@@ -3,46 +3,48 @@
 ## AI UI Generation Prompt
 
 ```markdown
-Create a minimalist portfolio browser screen with a sophisticated Gameboy aesthetic.
+Create a minimalist portfolio browser screen with tactile hardware-inspired design and 8-bit nostalgia.
 
 DESIGN SYSTEM:
-- Primary color: #9BBC0F (sage green)
-- Accent color: #FFB30F (warm amber)
+- Primary action color: #FF6B35 or #FFB30F (warm orange for main CTAs)
+- Secondary color: #9BBC0F (sage green)
 - Background: #F7F3E9 (cream paper with subtle texture)
 - Typography: Berkeley Mono for all text
-- Style: Conservative 8-bit pixel art with wabi-sabi imperfections
+- Style: Clean minimalism with tactile 3D button elements (inspired by Teenage Engineering EP-133)
 
 LAYOUT:
-- Clean header with small pixel art logo and app name "INVEST WITH BILLIONAIRES"
+- Clean header with small logo and app name "INVEST WITH BILLIONAIRES"
 - Grid of investor cards (2 columns on mobile, 3-4 on desktop)
 - Generous white space between cards
-- Each card should feel hand-crafted with subtle imperfections
+- Modular, organized grid alignment
 
 INVESTOR CARD DESIGN:
-- Soft rounded rectangle with subtle pixel-art-inspired corners
-- Light border (#8B8680) with intentional slight irregularities
-- Hand-drawn pixel art portrait of investor (32x32px style, simplified, iconic)
+- Clean rounded rectangle (6-8px border radius)
+- Light border (#8B8680), subtle 1px shadow for depth
+- Investor portrait: Simplified icon or illustrated portrait (32x32px, clean geometric or hand-drawn energetic style)
 - Investor name in Berkeley Mono, bold
 - Firm name in lighter weight
-- Key metrics: Portfolio value (IBM Plex Mono, LED display style), Number of holdings
-- ONE primary button: "Copy Portfolio" (sage green #9BBC0F, rounded)
-- Button has subtle hand-drawn quality (slightly imperfect edges)
-- Hover state: gentle lift with soft shadow
+- Key metrics: Portfolio value (IBM Plex Mono, LED display style with subtle glow), Number of holdings
+- Small status indicator dot (6px, orange or green) showing filing freshness
+- ONE primary button: "COPY PORTFOLIO" (warm orange #FF6B35, uppercase)
+- Button has tactile 3D depth (1-2px bottom shadow, raised appearance)
+- Hover state: lifts 2px, shadow deepens, feels pressable
 
 ATMOSPHERE:
-- Warm, approachable, sophisticated
-- Nostalgic 8-bit gaming meets modern fintech
-- Organic textures (paper grain background)
+- Empowering, energetic, confident
+- Hardware-inspired tactile UI meets modern fintech
+- Subtle texture on background
 - Minimal UI chrome, focus on content
-- Each card feels unique (slight variations in positioning/borders)
+- Professional yet approachable
 
 INTERACTIONS:
-- Smooth hover animations (lift cards slightly)
-- Gentle fade-in on scroll
-- Button hover: slight scale + glow effect
+- Card hover: gentle lift with soft shadow
+- Button hover: tactile press effect (lift + shadow)
+- Smooth transitions (200ms ease-out)
+- Status dots may pulse for fresh data
 
 REFERENCE VIBE:
-Gameboy aesthetics meets Linear's minimalism with authentic wabi-sabi imperfections
+Teenage Engineering EP-133 button interface meets Linear's minimalism with energetic, empowering personality
 ```
 
 ## Screen Purpose
@@ -57,11 +59,12 @@ Gameboy aesthetics meets Linear's minimalism with authentic wabi-sabi imperfecti
 ## Design Rationale
 
 **Why this design works**:
-- **One action per card**: Clear call-to-action reduces decision paralysis
-- **Pixel art portraits**: Humanizes institutional investors, adds nostalgic warmth
+- **One action per card**: Clear orange CTA reduces decision paralysis
+- **Tactile buttons**: 3D depth makes primary action feel clickable and empowering
+- **Status indicators**: Small colored dots provide at-a-glance freshness info
 - **Generous spacing**: Prevents overwhelming users with too much data
 - **LED-style numbers**: Makes large portfolio values ($354B) feel authentic and precise
-- **Wabi-sabi imperfections**: Hand-drawn borders create approachable, non-corporate feeling
+- **Hardware-inspired UI**: Familiar tactile patterns create confidence in financial decisions
 
 ## Responsive Considerations
 

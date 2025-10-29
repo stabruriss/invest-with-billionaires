@@ -3,81 +3,85 @@
 ## AI UI Generation Prompt
 
 ```markdown
-Create a minimalist landing page with sophisticated Gameboy aesthetics and compelling value proposition.
+Create a minimalist landing page with energetic, empowering design and compelling value proposition.
 
 DESIGN SYSTEM:
-- Primary: #9BBC0F (sage green)
-- Accent: #FFB30F (warm amber)
-- Background: #F7F3E9 (cream paper texture)
+- Primary action: #FF6B35 or #FFB30F (warm orange for main CTA)
+- Secondary: #9BBC0F (sage green)
+- Background: #F7F3E9 (cream/off-white with subtle texture)
 - Typography: Berkeley Mono (all text), IBM Plex Mono (numbers)
-- Conservative pixel art with wabi-sabi authenticity
+- Style: Clean minimalism with energetic hand-drawn illustrations (inspired by EP-133 marketing)
 
 LAYOUT:
 - Hero section (60% viewport height)
-- Value proposition (3-4 key benefits)
+- Value proposition (3 key benefits with illustrations)
+- How it works (3-step visual flow)
 - Social proof (if available)
 - ONE primary CTA throughout
 
 HERO SECTION:
-- Large headline: "INVEST WITH BILLIONAIRES" (Berkeley Mono, 48-72px, bold)
-- Subheadline: "Copy & customize institutional portfolios in under 30 minutes" (24px)
-- Small pixel-art icon (32x32): Trophy or dollar sign, hand-drawn style
-- ONE large CTA button: "Start Copying Buffett" (sage green, prominent)
-- Hero visual: Grid preview of pixel-art investor portraits (3x3 grid, muted/faded)
-- Honest tagline: "⚠ 13F data has 45-day lag - we make it useful with AI" (small, amber)
+- Large headline: "INVEST WITH BILLIONAIRES" (Berkeley Mono, 48-72px, bold, dark charcoal)
+- Subheadline: "Copy & customize institutional portfolios in under 30 minutes" (24px, lighter weight)
+- Energetic illustration: Hand-drawn character or diagram showing empowering concept (bold line art, orange accents)
+- ONE large CTA button: "START COPYING BUFFETT" (warm orange #FF6B35, uppercase, tactile 3D depth)
+- Button has raised appearance with shadow, lifts on hover
+- Honest disclaimer: "⚠ 13F data has 45-day lag - we make it useful with AI" (small, orange text)
 
-VALUE PROPOSITION (3 Cards):
+VALUE PROPOSITION (3 Cards with Illustrations):
 1. "COPY PROVEN STRATEGIES"
-   - Pixel-art icon (16x16): Document with checkmark
+   - Hand-drawn illustration: Portfolio/document with checkmark (energetic line art)
    - Text: "Browse 20+ famous investors. Copy portfolios with one click."
 
 2. "CUSTOMIZE YOUR WAY"
-   - Pixel-art icon (16x16): Sliders
+   - Hand-drawn illustration: Control sliders or knobs (hardware-inspired)
    - Text: "Adjust allocations to match your conviction. 100% in your control."
 
 3. "AI MARKET ANALYSIS"
-   - Pixel-art icon (16x16): Lightbulb or brain
+   - Hand-drawn illustration: Brain or lightbulb with energy rays
    - Text: "Get current insights on 45-day-old positions. Stay informed."
 
 Each card:
-- Light cream background, hand-drawn border
+- Clean white/light background, subtle border, minimal shadow
 - Generous padding (24-32px)
 - Minimal, scannable text
-- No overwhelming details
+- Illustration style: Bold black line art with orange accent fills
 
-HOW IT WORKS (Simple 3-Step):
-1. "Browse Famous Investors" → Pixel-art icon (grid)
-2. "Customize Portfolio" → Pixel-art icon (slider)
-3. "Execute with Alpaca" → Pixel-art icon (rocket)
+HOW IT WORKS (3-Step Visual Flow):
+Inspired by EP-133 step-by-step marketing:
+1. Numbered circle "①" + Title "BROWSE" + Illustration (hand pointing at investor grid)
+2. Numbered circle "②" + Title "CUSTOMIZE" + Illustration (hand adjusting sliders)
+3. Numbered circle "③" + Title "EXECUTE" + Illustration (rocket or celebration)
 
-Simple horizontal flow with pixel-art arrows between steps
-Berkeley Mono, concise descriptions (one line each)
+Black rounded header bars for each step (like EP-133 video thumbnails)
+Simple play button arrow (▶) connecting steps
+Berkeley Mono for titles, concise one-line descriptions
 
 SOCIAL PROOF (Optional):
-- "Built for semi-sophisticated investors who want institutional wisdom without 5-hour research sessions"
-- Small pixel-art person icons (8x8) as avatars
-- No fake testimonials - honest positioning
+- "Built for investors who want institutional wisdom without 5-hour research sessions"
+- Simple illustrated avatars (hand-drawn style)
+- No fake testimonials - honest, empowering positioning
 
 FOOTER CTA:
-- Repeat large button: "Get Started Free" (sage green)
+- Large orange button: "GET STARTED FREE" (same tactile style as hero)
 - Small disclaimer: "Paper trading available. No credit card required."
 - Legal: "Not investment advice | SEC disclaimers apply"
 
 ATMOSPHERE:
-- Confident but not hype-driven
-- Honest about limitations (45-day lag acknowledged)
-- Nostalgic warmth invites exploration
-- Minimal chrome, maximum clarity
+- Empowering, energetic, confident
+- Honest about limitations (lag acknowledged upfront)
+- Playful illustrations create approachability
+- Professional yet fun
 - ONE clear action (sign up)
 
 INTERACTIONS:
-- Hero CTA: pulsing glow effect (subtle)
-- Value prop cards: gentle hover lift
+- Hero CTA: Tactile hover (lifts 2px, shadow deepens)
+- Value prop cards: Gentle lift on hover
+- Illustrations may have subtle animation (optional, tasteful)
 - Smooth scroll to sections
-- No aggressive pop-ups or distractions
+- No aggressive pop-ups
 
 REFERENCE VIBE:
-Retro game start screen meets honest fintech landing page with wabi-sabi authenticity
+Teenage Engineering EP-133 marketing energy meets honest fintech landing page with empowering, champion mindset
 ```
 
 ## Screen Purpose

@@ -3,60 +3,68 @@
 ## AI UI Generation Prompt
 
 ```markdown
-Create a minimalist portfolio allocation editor with sophisticated Gameboy aesthetics and retro LED display numbers.
+Create a minimalist portfolio allocation editor with tactile hardware interface design and LED display numbers.
 
 DESIGN SYSTEM:
-- Primary: #9BBC0F (sage green)
-- Accent: #FFB30F (warm amber)
+- Primary action: #FF6B35 or #FFB30F (warm orange for SAVE/COMMIT)
+- Secondary: #9BBC0F (sage green)
 - Background: #F7F3E9 (cream paper texture)
 - Typography: Berkeley Mono (UI), IBM Plex Mono (numbers with LED display style)
-- Conservative pixel art with hand-drawn imperfections
+- Style: Clean modular layout inspired by music hardware interfaces (EP-133)
 
 LAYOUT:
-- Simple header: Portfolio name + total allocation indicator (large LED-style number showing "100.0%" in sage green when complete)
+- Header section:
+  - Portfolio name (editable, Berkeley Mono)
+  - Large LED-style total allocation display: "100.0%"
+  - Color: Sage green when valid (100%), pulsing orange when invalid
+  - Small status indicator dot showing edit state
 - Split view (desktop) or stacked (mobile):
-  - LEFT: Original Buffett portfolio (read-only, muted colors)
-  - RIGHT: Your custom version (editable, full color)
-- Comparison delta shown prominently (+/- from original)
+  - LEFT: Original portfolio (read-only, muted/gray tones)
+  - RIGHT: Your custom version (editable, full color, orange accents)
+- Comparison deltas shown prominently (+/- from original)
 
-HOLDINGS LIST:
-- Clean list layout (not dense table)
-- Each holding row:
-  - Small pixel art stock icon (16x16, hand-drawn feel)
-  - Ticker symbol (Berkeley Mono, bold)
-  - Company name (Berkeley Mono, lighter)
+HOLDINGS LIST (Modular Grid Layout):
+- Clean list with generous spacing (not cramped table)
+- Each holding row/module:
+  - Small company icon (16x16, clean geometric or minimal illustration)
+  - Ticker symbol (Berkeley Mono, bold, dark charcoal)
+  - Company name (Berkeley Mono, lighter weight)
   - Allocation percentage (IBM Plex Mono, LED display style with subtle glow)
-  - Simple slider OR direct input field (sage green accent)
-  - Delta indicator: "+3.2%" in amber or "-1.5%" in muted red
-- Generous spacing between rows (not cramped)
-- Subtle dithered dividers between holdings
+  - Allocation control: Slider OR direct input (orange accent for active state)
+  - Delta indicator: "+3.2%" (orange) or "-1.5%" (muted red) vs original
+  - Small remove button (× icon, minimal, light gray when inactive)
+- Subtle 1px dividers between holdings
+- Tactile control elements with depth
 
-ALLOCATION CONTROL:
-- Minimalist slider: thin track, chunky handle with pixel corners
-- Or: Direct percentage input with LED-style numbers
-- Real-time validation: total allocation indicator updates immediately
-- When total ≠ 100%: gentle amber warning glow around total indicator
+ALLOCATION CONTROLS:
+- Slider option: Thin track (dark gray), orange fill, chunky handle with rounded edges and subtle shadow (3D tactile feel)
+- Direct input option: LED-style number input with orange border on focus
+- Real-time validation: Total allocation updates instantly
+- Invalid state (≠100%): Orange pulsing glow around total, helpful message ("Add 12.5%" or "Reduce by 5%")
 
-BOTTOM ACTION:
-- ONE primary button: "Save Portfolio" (only enabled when 100%)
-- Large, confident button (sage green)
-- Disabled state: desaturated with subtle pixel texture
+PRIMARY ACTIONS (Modular Button Group):
+- "ADD POSITION" button (light gray/white background, dark text, secondary)
+- "SAVE PORTFOLIO" button (warm orange #FF6B35, uppercase, tactile 3D depth)
+- Save button only enabled when allocation = 100%
+- Disabled state: Flat appearance, 40% opacity, no shadow
+- Active state: Raised, prominent shadow, feels clickable
 
 ATMOSPHERE:
-- Focused, calm, empowering
-- Retro calculator/scoreboard feel for numbers
-- Hand-crafted pixel borders with slight irregularities
+- Focused, empowering, professional
+- Hardware control panel aesthetic
+- LED scoreboard feel for critical numbers
 - Warm paper texture background
-- Minimal chrome, maximum clarity
+- Minimal chrome, maximum clarity and control
 
 INTERACTIONS:
-- Slider movement smooth but with subtle "stepped" feel (8-bit callback)
-- Number updates with gentle LED-style flicker
-- Validation feedback immediate but not jarring
-- Hover states: subtle glow, no aggressive animations
+- Slider: Smooth dragging with tactile feedback
+- Number updates: Gentle LED flicker effect
+- Validation: Immediate feedback with pulsing orange indicator
+- Button hover: Lift effect (2px), shadow deepens
+- Button press: Tactile click (translateY: 0), satisfying interaction
 
 REFERENCE VIBE:
-Gameboy meets sophisticated spreadsheet with human touch
+Teenage Engineering EP-133 control panel meets professional trading interface with empowering tactile interactions
 ```
 
 ## Screen Purpose

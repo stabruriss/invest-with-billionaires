@@ -6,13 +6,14 @@ This document defines the user experience goals, information architecture, user 
 
 ### Document Purpose
 
-This specification translates product requirements into a concrete design system featuring a unique aesthetic: **sophisticated Gameboy minimalism with wabi-sabi authenticity and 8-bit nostalgia**. This design direction differentiates Invest with Billionaires from traditional fintech platforms through warmth, nostalgia, and honest simplicity.
+This specification translates product requirements into a concrete design system featuring a unique aesthetic: **sophisticated Gameboy minimalism with tactile hardware inspiration and 8-bit nostalgia**. Drawing inspiration from iconic music hardware like the Teenage Engineering EP-133, this design direction differentiates Invest with Billionaires from traditional fintech platforms through warmth, nostalgia, tactile interaction design, and honest simplicity.
 
 ### Change Log
 
 | Date | Version | Description | Author |
 |------|---------|-------------|---------|
 | 2025-10-17 | 1.0 | Initial UI/UX specification with design system | Sally (UX Expert) |
+| 2025-10-29 | 1.1 | Updated with EP-133 tactile hardware design patterns | Sally (UX Designer) |
 
 ---
 
@@ -51,16 +52,18 @@ This specification translates product requirements into a concrete design system
    - Secondary actions subtle and non-competing
    - Reduces decision paralysis, increases completion rates
 
-2. **Honest Authenticity (Wabi-Sabi)**
+2. **Honest Authenticity**
    - Embrace data imperfections (45-day lag acknowledged)
-   - Hand-drawn pixel art creates human touch
-   - Intentional asymmetry and organic textures
+   - Hand-drawn illustrations add human touch and energy
+   - Playful yet professional visual language
    - Never fake precision or certainty
 
-3. **Nostalgic Sophistication**
-   - 8-bit aesthetics meet modern fintech polish
-   - Retro gaming references (LED displays, pixel art)
-   - Warm, approachable, not childish
+3. **Tactile Interaction Design**
+   - Hardware-inspired UI elements (buttons feel clickable, 3D depth)
+   - Modular grid layouts like music equipment panels
+   - LED displays for critical numbers
+   - Status indicators (small colored dots) for system state
+   - Warm, approachable, empowering
    - Familiar patterns create comfort in financial decisions
 
 4. **Generous Breathing Room**
@@ -81,16 +84,17 @@ This specification translates product requirements into a concrete design system
 
 ### Visual Identity
 
-**Core Aesthetic**: Sophisticated Gameboy meets wabi-sabi minimalism with 8-bit nostalgia
+**Core Aesthetic**: Sophisticated hardware minimalism with tactile interaction design and 8-bit nostalgia
 
-**Brand Personality**: Warm, nostalgic, authentic, confident, approachable, honest
+**Brand Personality**: Empowering, energetic, authentic, confident, approachable, honest, playful
 
 **Visual References**:
+- Teenage Engineering EP-133 (modular button grids, tactile 3D elements)
 - Gameboy LCD green palette (sophisticated, not garish)
 - Linear's minimalist clarity
-- Hand-crafted pixel art (human touch)
+- Hand-drawn energetic illustrations (bold line art)
 - Retro LED scoreboards and 7-segment displays
-- Japanese wabi-sabi imperfection
+- Music hardware interface design (knobs, buttons, segmented displays)
 
 ### Color Palette
 
@@ -153,16 +157,22 @@ This specification translates product requirements into a concrete design system
 - **Paragraph Spacing**: 1.5em between paragraphs
 - **Mobile Scale**: Reduce font sizes by 10-15% on mobile (<768px)
 
-### Iconography
+### Iconography & Illustration
 
-**Icon Library**: Custom hand-drawn pixel art icons
+**Icon Library**: Custom minimalist icons + hand-drawn illustrations
 
-**Style Guidelines**:
-- **Size Standards**: 8x8px (micro), 16x16px (standard), 32x32px (large)
-- **Aesthetic**: Conservative 8-bit pixel art with subtle imperfections
+**Icon Style Guidelines**:
+- **Size Standards**: 16x16px (small), 24x24px (standard), 32x32px (large)
+- **Aesthetic**: Clean geometric shapes with optional pixel-art treatment for retro elements
 - **Color**: Monochrome (primary text color) or semantic colors (green/amber/red)
-- **Hand-Drawn Feel**: Slight irregularities, not perfectly geometric
-- **Crisp Rendering**: Use pixel-perfect grid, no anti-aliasing on icons
+- **Rendering**: Crisp, minimal, purposeful
+
+**Illustration Style** (NEW):
+- **Aesthetic**: Bold line art, energetic hand-drawn characters and diagrams
+- **Usage**: Hero sections, empty states, onboarding flows, feature explanations
+- **Color**: Black line art with orange accent fills, occasional sage green
+- **Personality**: Playful, energetic, empowering (inspired by EP-133 marketing materials)
+- **Examples**: Illustrated investors as champions/energetic characters, technical diagram overlays, hand-pointing at interfaces
 
 **Core Icon Set**:
 - Navigation: Home, Portfolio, Analytics, Settings (16x16)
@@ -249,35 +259,57 @@ xl:  32px  (4 units)
 
 **Purpose**: Primary and secondary actions throughout the application
 
-**Variants**:
-- **Primary**: Sage green (#9BBC0F), white text, dominant CTAs
-- **Secondary**: Outlined, neutral border, text color matches primary
-- **Tertiary**: Text-only, minimal styling, low-priority actions
-- **Danger**: Muted red (#C13B3B), destructive actions
+**Design Inspiration**: Tactile hardware buttons with 3D depth (inspired by EP-133 interface)
 
-**States**:
-- **Default**: Solid color, subtle pixel-corner rounding (4px)
-- **Hover**: Slight lift (2px), soft shadow, gentle glow
-- **Active**: Pressed down (-1px), darker shade
-- **Disabled**: 40% opacity, desaturated, pixel texture overlay
-- **Loading**: Animated pixel-art spinner (8-bit style)
+**Variants**:
+- **Primary (Orange)**: Warm orange (#FF6B35 or #FFB30F), white text, dominant CTAs (COMMIT, EXECUTE, SAVE)
+- **Main Action (Sage Green)**: Sage green (#9BBC0F), white text, secondary important actions
+- **Dark**: Dark charcoal/black (#2A2823), white text, main functions
+- **Light**: Light gray/white (#E8E6E0), dark text, secondary/tertiary actions
+- **Danger**: Muted red (#C13B3B), white text, destructive actions
+
+**States (Tactile 3D Design)**:
+- **Default**:
+  - Solid color with subtle 3D depth effect (1-2px bottom shadow/border)
+  - Slightly raised appearance using CSS box-shadow
+  - Rounded corners (6-8px, like hardware buttons)
+- **Hover**:
+  - Slight lift (2px translateY), shadow deepens
+  - Subtle glow for orange/green buttons
+  - Feels interactive and "pressable"
+- **Active/Pressed**:
+  - Pressed down (translateY: 0), shadow reduces
+  - Darker shade (filter: brightness(0.9))
+  - Tactile click feedback
+- **Disabled**: 40% opacity, desaturated, no shadow (appears flat)
+- **Loading**: Animated spinner or pulsing state
 
 **Sizing**:
-- Small: 32px height, 12px padding
-- Medium: 40px height, 16px padding
-- Large: 48px height, 20px padding
+- Small: 32px height, 12px horizontal padding
+- Medium: 40px height, 16px horizontal padding
+- Large: 48px height, 24px horizontal padding
+- **Touch-friendly**: Minimum 44x44px tap target on mobile
 
-**Typography**: Berkeley Mono, 16px, 600 weight, slight letter-spacing
+**Typography**:
+- Berkeley Mono, 14-16px, 600 weight, uppercase for primary actions
+- Slight letter-spacing (0.02em) for readability
+
+**Visual Details**:
+- Small status indicator dots (6px circles) can appear next to button text
+- Orange buttons have priority in visual hierarchy
+- Buttons in grids maintain modular alignment
 
 **Accessibility**:
 - Min contrast 4.5:1 (WCAG AA)
-- Focus indicator: 2px sage green outline, 2px offset
+- Focus indicator: 2px solid outline, 2px offset
 - Touch targets: Min 44x44px on mobile
 
 **Usage Guidelines**:
-- ONE primary button per screen max
-- Secondary/tertiary for alternative actions
-- Button text: verb-based ("Copy Portfolio", "Execute", "Save")
+- ONE primary orange button per screen max
+- Use orange for commit/execute actions
+- Dark buttons for mode selection/main functions
+- Light buttons for cancel/secondary actions
+- Button text: verb-based, uppercase for emphasis ("COPY PORTFOLIO", "EXECUTE", "SAVE")
 
 ---
 
@@ -461,19 +493,46 @@ xl:  32px  (4 units)
 
 ---
 
-#### 10. Loading States
+#### 10. Status Indicators (NEW)
+
+**Purpose**: Show system state, connection status, active modes (inspired by EP-133 indicator dots)
+
+**Visual Style**:
+- Small colored dots (6-8px diameter circles)
+- Solid fill, subtle glow effect optional
+- Positioned near labels or within buttons
+
+**Colors**:
+- **Orange (#FFB30F)**: Active, recording, processing
+- **Green (#9BBC0F)**: Connected, success, ready
+- **Red (#C13B3B)**: Error, disconnected, warning
+- **Gray (#8B8680)**: Inactive, off, neutral
+
+**Usage Examples**:
+- Connection status: "● Connected to Alpaca" (green dot)
+- Active mode: "● LIVE TRADING" vs "○ Paper Trading" (filled vs empty)
+- Processing state: Pulsing orange dot during execution
+- Multiple states: Row of dots showing multi-step progress
+
+**Animation**:
+- Pulse effect for active/processing states (scale 1 → 1.2 → 1, 1s loop)
+- Fade in/out for status changes (300ms transition)
+
+---
+
+#### 11. Loading States
 
 **Purpose**: Indicate async operations, data fetching
 
 **Visual Style**:
 - Skeleton screens: Light gray shapes matching content
-- Spinner: Pixel-art loading animation (8-bit style)
+- Spinner: Minimal rotating circle or pixel-art animation
 - Progress bar: For multi-step operations
 
 **Variants**:
-- **Inline**: Small pixel spinner (16x16)
-- **Full-page**: Centered, larger pixel animation (32x32)
-- **Button**: "Loading..." text with mini spinner
+- **Inline**: Small spinner (16x16)
+- **Full-page**: Centered, larger animation (32x32)
+- **Button**: "Loading..." text with mini spinner or pulsing orange dot
 
 ---
 
