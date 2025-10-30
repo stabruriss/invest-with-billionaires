@@ -3,7 +3,7 @@
 ## AI UI Generation Prompt
 
 ```markdown
-Create a minimalist authentication screen with sophisticated Gameboy aesthetics and frictionless sign-up flow.
+Create a minimalist authentication screen with tactile hardware design and frictionless sign-up flow.
 
 DESIGN SYSTEM:
 - Primary: #9BBC0F (sage green)

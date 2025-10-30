@@ -3,7 +3,7 @@
 ## AI UI Generation Prompt
 
 ```markdown
-Create a minimalist AI analysis interface with sophisticated Gameboy aesthetics and authentic conversational design.
+Create a minimalist AI analysis interface with tactile hardware design and authentic conversational design.
 
 DESIGN SYSTEM:
 - Primary: #9BBC0F (sage green)

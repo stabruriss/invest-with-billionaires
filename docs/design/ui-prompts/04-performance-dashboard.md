@@ -3,14 +3,14 @@
 ## AI UI Generation Prompt
 
 ```markdown
-Create a minimalist performance dashboard with sophisticated Gameboy aesthetics, LED-style numbers, and authentic data visualization.
+Create a minimalist performance dashboard with tactile hardware design, LED-style numbers, and clean data visualization.
 
 DESIGN SYSTEM:
-- Primary: #9BBC0F (sage green)
-- Accent: #FFB30F (warm amber)
-- Background: #F7F3E9 (cream paper texture)
-- Typography: Berkeley Mono (UI), IBM Plex Mono (numbers - LED scoreboard style)
-- Conservative pixel art with hand-drawn imperfections
+- Primary action: #FF6B35 or #FFB30F (warm orange)
+- Secondary: #9BBC0F (sage green for gains/success)
+- Background: #F7F3E9 (cream/off-white texture)
+- Typography: Berkeley Mono (UI), IBM Plex Mono (numbers - LED display style)
+- Style: Clean modular layout with hardware-inspired controls
 
 LAYOUT:
 - Hero metrics at top (large LED-style numbers)
@@ -27,12 +27,12 @@ HERO METRICS:
 - Generous spacing between metrics
 - Subtle pixel-art trophy icon (32x32, hand-drawn)
 
-TIME PERIOD SELECTOR:
-- Horizontal pill buttons: [1D] [1W] [1M] [3M] [6M] [1Y] [ALL]
-- Selected state: sage green background, slightly raised
-- Unselected: light gray with pixel texture
-- Berkeley Mono labels
-- Minimal, clean, not overwhelming
+TIME PERIOD SELECTOR (Modular Button Grid):
+- Horizontal button group: [1D] [1W] [1M] [3M] [6M] [1Y] [ALL]
+- Selected state: Dark charcoal background (#2A2823), white text, tactile 3D pressed appearance
+- Unselected: Light gray (#E8E6E0), dark text, raised appearance
+- Berkeley Mono labels, uppercase
+- Hardware-inspired button grid like EP-133 controls
 
 PERFORMANCE CHART:
 - Simple line chart (not overly complex)
@@ -54,8 +54,8 @@ COMPARISON SECTION:
 - Generous padding
 
 PRIMARY ACTION:
-- ONE button: "View Detailed Positions" (sage green, bottom)
-- Or: "Analyze Portfolio with AI" (if triggering AI analysis)
+- ONE button: "ANALYZE WITH AI" (warm orange #FF6B35, uppercase, tactile 3D depth)
+- Or: "VIEW POSITIONS" as secondary action (light gray button)
 
 ATMOSPHERE:
 - Calm confidence, honest data presentation

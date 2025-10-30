@@ -3,7 +3,7 @@
 ## AI UI Generation Prompt
 
 ```markdown
-Create a clean settings page with sophisticated Gameboy aesthetics and organized preferences management.
+Create a clean settings page with tactile hardware design and organized preferences management.
 
 DESIGN SYSTEM:
 - Primary: #9BBC0F (sage green)

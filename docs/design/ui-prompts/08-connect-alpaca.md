@@ -3,7 +3,7 @@
 ## AI UI Generation Prompt
 
 ```markdown
-Create a trustworthy brokerage connection screen with sophisticated Gameboy aesthetics and clear security messaging.
+Create a trustworthy brokerage connection screen with tactile hardware design and clear security messaging.
 
 DESIGN SYSTEM:
 - Primary: #9BBC0F (sage green)

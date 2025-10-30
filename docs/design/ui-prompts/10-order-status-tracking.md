@@ -3,7 +3,7 @@
 ## AI UI Generation Prompt
 
 ```markdown
-Create a real-time order tracking screen with sophisticated Gameboy aesthetics and clear status communication.
+Create a real-time order tracking screen with tactile hardware design and clear status communication.
 
 DESIGN SYSTEM:
 - Primary: #9BBC0F (sage green)

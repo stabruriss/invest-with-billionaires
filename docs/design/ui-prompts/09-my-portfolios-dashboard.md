@@ -3,7 +3,7 @@
 ## AI UI Generation Prompt
 
 ```markdown
-Create a minimalist portfolio management dashboard with sophisticated Gameboy aesthetics and clear portfolio overview.
+Create a minimalist portfolio management dashboard with tactile hardware design and clear portfolio overview.
 
 DESIGN SYSTEM:
 - Primary: #9BBC0F (sage green)
